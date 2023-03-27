@@ -51,24 +51,6 @@ namespace WebApiRBI.Controllers
             return Ok(owner);
         }
 
-        //[HttpGet("byRest/{restaurantId}")]
-        //[ProducesResponseType(200, Type = typeof(Owner))]
-        //[ProducesResponseType(400)]
-        //[ProducesResponseType(404)]
-        //public IActionResult GetOwnerByRestaurantId(int restaurantId)
-        //{
-        //    if(!_restaurantRepository.RestaurantExists(restaurantId))
-        //        return NotFound();
-
-        //    var owner = _mapper.Map<OwnerDto>(_ownerRepository.GetOwnerByRestaurantId(restaurantId));
-
-        //    if (!ModelState.IsValid)
-        //        return BadRequest();
-
-        //    return Ok(owner);
-        //}
-
-
         //Post Method
         [HttpPost]
         [ProducesResponseType(204)]
